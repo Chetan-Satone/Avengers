@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/avengers_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/imgLogo"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:hint="@string/mobile_number"
+        android:autofillHints="phone"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/etMobileNumber"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:hint="@string/password_"
+        android:autofillHints="password"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btLoginHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_below="@id/etPass"
+        android:backgroundTint="@color/purple_700"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:layout_below="@+id/btLoginHere"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtForgotPassword"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:text="@string/register_yourself"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
