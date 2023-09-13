@@ -1,6 +1,6 @@
 # Avengers
 
-This a basic app with UI and working of buttons using clicklistener and text with using shared prefrences for password and id.
+This a basic app with UI and working of buttons using clicklistener and text with using shared preferences for password and id.
 
 # ScreenShot
 
